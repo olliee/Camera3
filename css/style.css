@@ -35,7 +35,7 @@ body {
 .content {
   position: relative;
   top: 30%;
-  z-index: 2;
+  z-index: 3;
   margin: 0 auto;
   max-width: 720px;
   text-align: center;
@@ -43,13 +43,13 @@ body {
 
 .content__heading {
   margin-bottom: 24px;
-  color: #272727;
-  font-size: 44px;
+  color: #fff;
+  font-size: 95px;
 }
 
 .content__teaser {
   margin-bottom: 24px;
-  color: #595959;
+  color: #fff;
   font-size: 22px;
 }
 
@@ -57,10 +57,10 @@ body {
   display: inline-block;
   margin: 0;
   padding: 12px 48px;
-  color: #ff3c64;
+  color: #fff;
   font-size: 22px;
   text-decoration: none;
-  border: solid 4px #ff3c64;
+  border: solid 4px #fff;
 }
 
 /* =============================================================================
@@ -78,4 +78,15 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    background-repeat: repeat;
+    z-index: 2;
 }
